@@ -1,15 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { data } from '../../../constants';
 
 
 
 interface IProduct {
-    onder:string
+    data: any
 }
 
 
 
 const initialState: IProduct = {
-    onder:"asdas"
+    data: data
 
 };
 
