@@ -28,7 +28,6 @@ const Product = () => {
         <div className="w-4/5 flex justify-center items-center mx-auto">
             <div className="grid grid-cols-3">
                 {productList()}
-
             </div>
         </div>
 
