@@ -16,6 +16,7 @@ const Modal = () => {
                     <span className="w-full flex justify-end p-1 text-2xl font-bold cursor-pointer " onClick={() => dispatch(handleCloseModal({}))} >X</span>
                     <div className="w-full">
                         <Card
+                            modal={true}
                             name={selectedProduct.name}
                             stock={selectedProduct.stock}
                             description={selectedProduct.description}
