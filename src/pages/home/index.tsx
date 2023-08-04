@@ -5,14 +5,9 @@ import { RootState } from "../../redux/reducers"
 
 
 const Home = () => {
-
-    const modal = useSelector((state: RootState) => state.cart.modal)
-
-
-
     return (
         <>
-            {modal && <Modal />}
+            <Modal />
             <Product />
         </>
     )
