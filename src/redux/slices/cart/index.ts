@@ -9,7 +9,7 @@ interface ICart {
 
 
 const initialState: ICart = {
-    basket: []
+    basket: JSON.parse(localStorage.getItem("basket") ?? "[]")
 
 };
 
@@ -26,6 +26,7 @@ const cartSlice = createSlice({
             } else {
                 temp.count = 1
                 state.basket.push(temp)
+                localStorage.setItem("basket",JSON.stringify(state.basket))
             }
         }
 

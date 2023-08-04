@@ -4,7 +4,6 @@ import BasketCard from "../basketcard";
 const Basket = () => {
 
     const basket = useSelector((state: RootState) => state.cart.basket)
-    console.log(basket);
 
 
     return (
