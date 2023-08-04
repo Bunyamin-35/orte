@@ -5,6 +5,7 @@ import Card from "../card"
 const Product = () => {
 
     const data = useSelector((state: RootState) => state.product.data)
+    const show = useSelector((state: RootState) => state.cart.modal)
 
     const productList = () => {
         const product = [];
@@ -25,7 +26,7 @@ const Product = () => {
         return product
     }
     return (
-        <div className="w-4/5 flex justify-center items-center mx-auto">
+        <div className={`w-4/5 flex justify-center items-center mx-auto relative ${show ? "z-[-1]": "z-1"}`}>
             <div className="grid grid-cols-3">
                 {productList()}
             </div>
